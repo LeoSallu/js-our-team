@@ -33,4 +33,7 @@ const arrayTeam = [
         img:'barbara-ramos-graphic-designer.jpg' 
     }
 ];
-
+// Ciclo For per stamapare gli oggetti
+for(let key in arrayTeam){
+    console.log(arrayTeam[key]);
+}
