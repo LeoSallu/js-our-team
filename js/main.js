@@ -1,4 +1,16 @@
 'use strict';
+//Funzioni
+function elementCreator(htmlElement,className,htmlValue){
+    const element = document.createElement(htmlElement);
+    element.classList.add(className);
+    element.innerText = htmlValue;
+    return element;
+}
+function myAppendElement(containerElement , htmlElement){
+    containerElement.append(htmlElement);
+}
+//Variabili
+const container = document.querySelector('.team-container');
 
 // Array & Item 
 const arrayTeam = [
@@ -33,13 +45,14 @@ const arrayTeam = [
         img:'barbara-ramos-graphic-designer.jpg' 
     }
 ];
-//Variabili
-const container = document.querySelector('.team-container');
 // Ciclo For per stamapare gli oggetti
 for(let key in arrayTeam){
     let teamMember=(arrayTeam[key]);
     console.log(teamMember);
-        container.innerHTML += arrayTeam[key].name;
-        container.innerHTML += arrayTeam[key].role;
-        container.innerHTML += arrayTeam[key].img;
+        let name = arrayTeam[key].name;
+        let role = arrayTeam[key].role;
+        let img = arrayTeam[key].img;
+        element += createElement('div');
+        element.classList.add('card');
+        container.innerHTML+=element+`${name} ${role} ${img}`;
     };    
