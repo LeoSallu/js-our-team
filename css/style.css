@@ -44,3 +44,7 @@ h1{
     border-radius: 20px;
     background-color: #574AE2;
 }
+.img{
+    width: 40px;
+    display: block;
+}
