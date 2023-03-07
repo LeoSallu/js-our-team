@@ -52,7 +52,6 @@ for(let key in arrayTeam){
         let name = arrayTeam[key].name;
         let role = arrayTeam[key].role;
         let img = arrayTeam[key].img;
-        element += createElement('div');
-        element.classList.add('card');
-        container.innerHTML+=element+`${name} ${role} ${img}`;
+        let element = elementCreator('div','card',`${name} ${role}  ${img}`);
+        container.append(element);
     };    
