@@ -52,9 +52,9 @@ for(let key in arrayTeam){
         let name = arrayTeam[key].name;
         let role = arrayTeam[key].role;
         let img = arrayTeam[key].img;
-        document.querySelectorAll('.img').src =`img/${img}`;
         let element = elementCreator('div','card',`${name} ${role}`);
         let imgElement = elementCreator('img','img');
+        imgElement.src=`img/${img}`;
         container.append(element);
         element.append(imgElement);
     };    
