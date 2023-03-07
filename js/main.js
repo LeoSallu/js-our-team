@@ -33,7 +33,13 @@ const arrayTeam = [
         img:'barbara-ramos-graphic-designer.jpg' 
     }
 ];
+//Variabili
+const container = document.querySelector('.team-container');
 // Ciclo For per stamapare gli oggetti
 for(let key in arrayTeam){
-    console.log(arrayTeam[key]);
-}
+    let teamMember=(arrayTeam[key]);
+    console.log(teamMember);
+    for(let i=0;i<=arrayTeam.length;i++){
+        container.innerHTML = arrayTeam[key];
+    }    
+    };    

@@ -6,3 +6,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/*
+    Body  
+*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: deeppink;
+
+}
