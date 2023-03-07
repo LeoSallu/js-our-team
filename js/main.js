@@ -40,6 +40,6 @@ for(let key in arrayTeam){
     let teamMember=(arrayTeam[key]);
     console.log(teamMember);
     for(let i=0;i<=arrayTeam.length;i++){
-        container.innerHTML = arrayTeam[key];
+        container.innerHTML = arrayTeam[key].name;
     }    
     };    
